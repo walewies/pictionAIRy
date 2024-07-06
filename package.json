@@ -1,0 +1,25 @@
+{
+  "name": "pictionairy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/walewies/pictionAIRy.git"
+  },
+  "author": "Wian Lewies",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/walewies/pictionAIRy/issues"
+  },
+  "homepage": "https://github.com/walewies/pictionAIRy#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
