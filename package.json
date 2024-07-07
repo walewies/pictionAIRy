@@ -1,9 +1,9 @@
 {
   "name": "pictionairy",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   "homepage": "https://github.com/walewies/pictionAIRy#readme",
   "description": "",
   "dependencies": {
+    "body-parser": "^1.20.2",
     "express": "^4.19.2"
   },
   "devDependencies": {
