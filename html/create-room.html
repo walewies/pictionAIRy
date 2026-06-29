@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Room — pictionAIRy</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="common.js" defer></script>
+    <script src="create-room.js" defer></script>
+</head>
+<body>
+    <div class="app-shell">
+        <header class="app-header">
+            <a class="app-header__back" href="index.html">← Home</a>
+            <a class="app-header__brand" href="index.html">piction<span>AIRy</span></a>
+        </header>
+
+        <main class="app-main">
+            <section class="page-card">
+                <h1 class="page-title">Create a Room</h1>
+                <p class="page-subtitle page-subtitle--compact">
+                    Set up a new game and share the room code with your friends.
+                </p>
+
+                <form id="create-room-form" novalidate>
+                    <div class="form-group">
+                        <label class="form-label" for="display-name">Your display name</label>
+                        <input
+                            class="form-input"
+                            type="text"
+                            id="display-name"
+                            name="displayName"
+                            placeholder="Enter your name"
+                            autocomplete="nickname"
+                            maxlength="24"
+                        >
+                        <p class="form-hint">This is how other players will see you in the room.</p>
+                    </div>
+
+                    <div class="info-panel">
+                        <p class="info-panel__title">Coming soon</p>
+                        <p class="info-panel__text">
+                            Room creation, code generation, and player hosting will be wired up here.
+                        </p>
+                    </div>
+
+                    <div class="form-actions">
+                        <button class="btn btn--primary" type="submit">Create Room</button>
+                        <a class="btn btn--secondary" href="index.html">Cancel</a>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

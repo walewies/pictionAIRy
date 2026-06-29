@@ -4,13 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pictionAIRy</title>
-    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="common.js" defer></script>
 </head>
 <body>
-    <h1>Welcome to pictionAIRy</h1>
-    <button id="request">Request sensor permission</button>
-    <div id="accX"></div>
-    <div id="accY"></div>
-    <div id="accZ"></div>
+    <div class="app-shell">
+        <header class="app-header">
+            <a class="app-header__brand" href="index.html">piction<span>AIRy</span></a>
+        </header>
+
+        <main class="app-main">
+            <section class="page-card page-card--home">
+                <div class="logo-mark" aria-hidden="true">🎨</div>
+                <h1 class="page-title">Draw in the air</h1>
+                <p class="page-subtitle">Create a room for friends or join one that is already open.</p>
+
+                <div class="action-list">
+                    <a class="btn btn--primary" href="create-room.html">Create Room</a>
+                    <a class="btn btn--secondary" href="join-room.html">Join Room</a>
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
 </html>

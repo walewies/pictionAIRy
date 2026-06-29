@@ -1,7 +1,8 @@
 const express = require("express");
 const app = express();
+const path = require("path");
 const PORT = 8080;
-const IPADDRESS = "192.168.101.109";
+const IPADDRESS = "192.168.101.118";
 const https = require("https");
 const fs = require("fs");
 
@@ -19,8 +20,8 @@ const options = {
 };
 
 app.get("/", (req, res) => {
-    res.sendFile("index.js");
-})
+    res.sendFile(path.join(__dirname, "html", "index.html"));
+});
 
 https.createServer(options, app).listen(PORT, () => {
     console.log(`Listening @ https://${IPADDRESS}:${PORT}`);
